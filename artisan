@@ -1,0 +1,9 @@
+#!/bin/bash
+# alias to: ./artisan
+
+if [ ! -e "./artisan" ]; then
+    echo "Command: ./artisan not found."
+    exit 1
+fi
+
+php ./artisan $@
